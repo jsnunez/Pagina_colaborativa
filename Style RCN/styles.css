@@ -280,3 +280,70 @@ a:hover {
   padding: 5px;
 
 }
+
+/* estilos para rastrear pedido*/
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.formulario,
+.rastreo-envio {
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.formulario {
+  border-right: none;
+}
+
+.rastreo-envio {
+  border-left: none;
+}
+
+.formulario label,
+.rastreo-envio label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.rastreo-envio input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.formulario input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formulario input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.rastreo-envio input[type="text"] {
+  width: calc(100% - 20px);
+}
+
+.rastreo-envio label,
+.rastreo-envio input[type="text"] {
+  display: block;
+  margin-bottom: 10px;
+}
+}
