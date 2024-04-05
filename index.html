@@ -186,7 +186,6 @@ Explora nuestra variedad de productos y servicios, diseñados para los amantes d
 
           </div>
     </div>
-
     <h1>Búsqueda Avanzada</h1>
 
     <!-- Formulario de búsqueda avanzada -->
@@ -253,17 +252,38 @@ Explora nuestra variedad de productos y servicios, diseñados para los amantes d
             document.getElementById('searchResults').innerHTML = resultadosHTML;
         });
     </script>
-    <h2>Suscríbete para recibir nuestras novedades</h2>
+    
 
-<form action="#" method="POST">
-  <label for="nombre">Nombre:</label><br>
-  <input type="text" id="nombre" name="nombre" required><br><br>
+    <div class="contenedor">
+        
+        <div class="formulario">
+            <h2>Suscríbete para recibir nuestras novedades</h2>
+            <form action="#" method="POST">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+    
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+    
+                <input type="submit" value="Suscribirse">
+            </form>
+        </div>
+    
+        <div class="rastreo-envio">
+            <h2>Rastrea tu pedido</h2>
+            <label for="codigo-rastreo">Rastrea el Envío:</label><br>
+            <input type="text" id="codigo-rastreo" name="codigo-rastreo"><br><br>
+            <button type="submit">Buscar</button>
+        </div>
+        <div class="promocion">
+            <h2>Promociones</h2>
+            <form action="promociones.html" method="GET">
+                <button type="submit">Promoción</button>
+            </form>
+        </div>
 
-  <label for="email">Correo electrónico:</label><br>
-  <input type="email" id="email" name="email" required><br><br>
-
-  <input type="submit" value="Suscribirse">
-</form>
+    </div>
+    
     <footer>
         <div id="links-footer">
             <a href="acerca.html">Acerca de Nosotros</a>
